@@ -10,9 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module">
       import { BarChart} from  "./graph.js";
-      import { labels, data, borderwidth, beginAtZero} from  "./constants.js";
-      import { getElementById, typechart, label} from  "./module.js";
-      const obj = Object.freeze({ id: getElementById('myChart'), typechart: typechart('bar'),  labels: labels, data: data, label: label('# of Votes'), borderwidth:borderwidth, beginAtZero:beginAtZero})
+      import { ObjectHere } from  "./main.js";
       const GraphBarChart = new BarChart(obj.id, obj.typechart, obj.labels, obj.data, obj.label, obj.borderwidth, obj.beginAtZero);
       GraphBarChart.generateGraph();
     </script>
