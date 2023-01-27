@@ -16,7 +16,7 @@
       const string_label = "# of Votes";
       const border_width = 1;
       const begin_at_zero = true;
-      new Chart(ctx, {
+      const string_chart = `new Chart(ctx, {
         type: typeChart,
         data: {
           labels: array_labels,
@@ -35,7 +35,8 @@
             },
           },
         },
-      });
+      });`
+      console.log(string_chart);
     </script>
   </body>
 </html>
