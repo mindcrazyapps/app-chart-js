@@ -1,5 +1,5 @@
 export const ctx = document.getElementById("myChart");
-export const typeChart = "bar";
+export const typechart = "bar";
 export const labels = ["Reds", "Blue", "Yellow", "Green", "Purple", "Orange"];
 export const data = [12, 19, 3, 5, 2, 3];
 export const label = "# of Votes";
