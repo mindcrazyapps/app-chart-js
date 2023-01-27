@@ -12,7 +12,8 @@
       import { BarChart} from  "./graph.js";
       import { labels, data, borderwidth, beginAtZero} from  "./constants.js";
       import { getElementById, typechart, label} from  "./module.js";
-      const GraphBarChart = new BarChart(getElementById('myChart'), typechart('bar'), labels, data, label('# of Votes'), borderwidth, beginAtZero);
+      const obj = Object.freeze({ id: getElementById('myChart'), typechart: typechart('bar'),  labels: labels, data: data, label: label('# of Votes'), borderwidth:borderwidth, beginAtZero:beginAtZero})
+      const GraphBarChart = new BarChart(obj.id, obj.typechart, obj.labels, obj.data, obj.label, obj.borderwidth, obj.beginAtZero);
       GraphBarChart.generateGraph();
     </script>
   </body>
