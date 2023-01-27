@@ -1,12 +1,12 @@
 export const ctx = document.getElementById("myChart");
 export const typeChart = "bar";
-export const array_labels = ["Reds", "Blue", "Yellow", "Green", "Purple", "Orange"];
-export const array_data = [12, 19, 3, 5, 2, 3];
-export const string_label = "# of Votes";
-export const border_width = 1;
-export const begin_at_zero = true;
+export const labels = ["Reds", "Blue", "Yellow", "Green", "Purple", "Orange"];
+export const data = [12, 19, 3, 5, 2, 3];
+export const label = "# of Votes";
+export const borderwidth = 1;
+export const beginAtZero = true;
 export class BarChart {
-  constructor(id, typechart, labels, data, borderwidth, beginAtZero) {
+  constructor(id, typechart, labels, data, label, borderwidth, beginAtZero) {
     this.id = id;
     this.typechart= typechart;
     this.labels= labels;
