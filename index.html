@@ -9,7 +9,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module">
-      import { BarChart} from  "./app.js";
+      import { BarChart} from  "./graph.js";
       import { labels, data, borderwidth, beginAtZero} from  "./constants.js";
       import { getElementById, typechart, label} from  "./module.js";
       const GraphBarChart = new BarChart(getElementById('myChart'), typechart('bar'), labels, data, label('# of Votes'), borderwidth, beginAtZero);
