@@ -10,22 +10,28 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
       const ctx = document.getElementById("myChart");
+      const typeChart = "bar";
+      const array_labels = ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"];
+      const array_data = [12, 19, 3, 5, 2, 3];
+      const string_label = "# of Votes";
+      const border_width = 1;
+      const begin_at_zero = true;
       new Chart(ctx, {
-        type: "bar",
+        type: typeChart,
         data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          labels: array_labels,
           datasets: [
             {
-              label: "# of Votes",
-              data: [12, 19, 3, 5, 2, 3],
-              borderWidth: 1,
+              label: string_label,
+              data: array_data,
+              borderWidth: border_width,
             },
           ],
         },
         options: {
           scales: {
             y: {
-              beginAtZero: true,
+              beginAtZero: begin_at_zero,
             },
           },
         },
