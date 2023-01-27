@@ -9,8 +9,8 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module">
-      import { ctx, typechart, labels, data, label, borderwidth, beginAtZero, BarChart} from  "./module.js";
-      const GraphBarChart = new BarChart(ctx, typechart, labels, data, label, borderwidth, beginAtZero);
+      import { getElementById, typechart, labels, data, label, borderwidth, beginAtZero, BarChart} from  "./module.js";
+      const GraphBarChart = new BarChart(getElementById('myChart'), typechart, labels, data, label, borderwidth, beginAtZero);
       GraphBarChart.generateGraph();
     </script>
   </body>
