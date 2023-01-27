@@ -8,16 +8,8 @@
       <canvas id="myChart"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="module">
-      export const ctx = document.getElementById("myChart");
-      export const typeChart = "bar";
-      export const array_labels = ["Reds", "Blue", "Yellow", "Green", "Purple", "Orange"];
-      export const array_data = [12, 19, 3, 5, 2, 3];
-      export const string_label = "# of Votes";
-      export const border_width = 1;
-      export const begin_at_zero = true;
-    </script>
     <script>
+      import { foo, bar } from  "./module.js";
       new Chart(ctx, {
         type: typeChart,
         data: {
