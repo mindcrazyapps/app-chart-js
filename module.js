@@ -38,5 +38,3 @@ export class BarChart {
       }); 
     }
   }
-
-export {BarChart};
