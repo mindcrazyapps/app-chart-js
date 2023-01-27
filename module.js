@@ -1,4 +1,4 @@
-export const ctx = document.getElementById("myChart");
+export const getElementById = (parameter) => { return document.getElementById(parameter); };
 export const typechart = "bar";
 export const labels = ["Reds", "Blue", "Yellow", "Green", "Purple", "Orange"];
 export const data = [12, 19, 3, 5, 2, 3];
