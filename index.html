@@ -9,27 +9,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module">
-      import { ctx, typeChart, array_labels, array_data, string_label, border_width, begin_at_zero } from  "./module.js";
-      new Chart(ctx, {
-        type: typeChart,
-        data: {
-          labels: array_labels,
-          datasets: [
-            {
-              label: string_label,
-              data: array_data,
-              borderWidth: border_width,
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: begin_at_zero,
-            },
-          },
-        },
-      }); 
+      import { ctx, typeChart, array_labels, array_data, string_label, border_width, begin_at_zero, BarChart} from  "./module.js";
+      const BarChart = new BarChart(ctx, typeChart, array_labels, array_data, string_label, border_width, begin_at_zero);
+      BarChart.generateGraph();
     </script>
   </body>
 </html>
